@@ -22,7 +22,6 @@ interface Deliverable {
 class Order {
     private String itemName;
     private double itemPrice;
-    BigDecimal price = BigDecimal.valueOf(itemPrice);
 
     public Order (String newItemName, double newItemPrice) {
         this.itemName = newItemName;
@@ -30,7 +29,7 @@ class Order {
         BigDecimal bd = BigDecimal.valueOf(newItemPrice);
         if (bd.scale() > 2) {
             this.itemPrice = bd.setScale(0, RoundingMode.DOWN).doubleValue();
-            System.out.println("Cлишком много копеек. Цена товара = " + this.itemPrice);
+            System.out.println("Cлишком много копеек. Цена товара '" + itemName + "' = " + this.itemPrice);
         } else {
             this.itemPrice = newItemPrice;
         }
