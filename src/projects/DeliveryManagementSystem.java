@@ -27,6 +27,12 @@ class Order {
     public Order (String newItemName, double newItemPrice, int newItemQuantity) {
         this.itemName = newItemName;
 
+        if (newItemPrice < 0) {
+            this.itemPrice = 0;
+            this.itemQuantity = 0;
+            return;
+        }
+
         BigDecimal bd = BigDecimal.valueOf(newItemPrice);
         if (bd.scale() > 2) {
             this.itemPrice = bd.setScale(0, RoundingMode.DOWN).doubleValue();
@@ -72,7 +78,12 @@ class Courier implements Deliverable {
         }
     }
     public void deliver (){
-        System.out.println("Курьер " + name + " доставил следующие заказы:");
+
+        if (backpack.isEmpty()) {
+            System.out.println("Курьер не брал заказа!");
+        } else {
+            System.out.println("Курьер " + name + " доставил следующие заказы:");
+        }
 
         for (Order item : backpack) {
             if (item.getItemQuantity() == 0) {
