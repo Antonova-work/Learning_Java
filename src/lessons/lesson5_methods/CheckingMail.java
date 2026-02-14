@@ -1,4 +1,4 @@
-package lesson5_methods;
+package lessons.lesson5_methods;
 
 public class CheckingMail {
     public static boolean isEmailValid(String email){

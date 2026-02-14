@@ -1,4 +1,4 @@
-package lesson6_OOP;
+package lessons.lesson6_OOP;
 
 public class CreatingARestaurant {
     public static void main(String[] args) {

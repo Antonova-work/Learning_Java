@@ -1,4 +1,4 @@
-package lesson3_cycles;
+package lessons.lesson3_cycles;
 
 public class CountDown {
     public static void main(String[] args) {

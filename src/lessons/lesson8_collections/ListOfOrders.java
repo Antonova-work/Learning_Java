@@ -1,4 +1,4 @@
-package lesson8_collections;
+package lessons.lesson8_collections;
 import java.util.ArrayList; // Нужно импортировать!
 
 

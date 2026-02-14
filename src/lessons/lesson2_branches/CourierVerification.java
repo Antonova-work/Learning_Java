@@ -1,4 +1,4 @@
-package lesson2_branches;
+package lessons.lesson2_branches;
 
 public class CourierVerification {
     public static void main(String[] args) {

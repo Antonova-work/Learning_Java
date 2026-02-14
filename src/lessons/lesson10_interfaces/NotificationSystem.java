@@ -1,4 +1,4 @@
-package lesson10_interfaces;
+package lessons.lesson10_interfaces;
 
 public class NotificationSystem {
     public static void main(String[] args) {

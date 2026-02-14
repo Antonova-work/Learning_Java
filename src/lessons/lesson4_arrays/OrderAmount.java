@@ -1,4 +1,4 @@
-package lesson4_arrays;
+package lessons.lesson4_arrays;
 
 public class OrderAmount {
     public static void main(String[] args) {

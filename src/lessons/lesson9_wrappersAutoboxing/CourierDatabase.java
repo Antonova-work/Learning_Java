@@ -1,4 +1,4 @@
-package lesson9_wrappersAutoboxing;
+package lessons.lesson9_wrappersAutoboxing;
 import java.util.HashMap;
 
 public class CourierDatabase {

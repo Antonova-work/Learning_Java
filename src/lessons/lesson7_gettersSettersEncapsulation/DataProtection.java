@@ -1,4 +1,4 @@
-package lesson7_gettersSettersEncapsulation;
+package lessons.lesson7_gettersSettersEncapsulation;
 
 public class DataProtection {
     public static void main(String[] args) {
