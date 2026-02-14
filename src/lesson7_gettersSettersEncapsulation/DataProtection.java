@@ -14,7 +14,7 @@ class Restaurant {
     private String name;
     private double rating;
 
-    public Restaurant (String name) {
+    public Restaurant(String name) {
         this.name = name;
     }
 
@@ -22,18 +22,17 @@ class Restaurant {
         return name;
     }
 
-    public void setRating (double newRating){
+    public void setRating(double newRating) {
         if (newRating < 0.0) {
             this.rating = 0.0;
-        }
-        else if (newRating > 5.0){
+        } else if (newRating > 5.0) {
             this.rating = 5.0;
         } else {
             this.rating = newRating;
         }
     }
 
-    public double getRating (){
+    public double getRating() {
         return rating;
     }
 }
