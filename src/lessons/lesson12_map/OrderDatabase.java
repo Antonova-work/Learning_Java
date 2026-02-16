@@ -1,6 +1,7 @@
 package lessons.lesson12_map;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class OrderDatabase {
@@ -25,6 +26,11 @@ public class OrderDatabase {
             System.out.println(database.get(id));
         } else {
             System.out.println("Нет такого заказа.");
+        }
+
+        System.out.println("\nПолный отчёт по базе");
+        for (Map.Entry<Integer, Order> entry : database.entrySet()) {
+            System.out.println("ID #" + entry.getKey() + " -> " + entry.getValue());
         }
     }
 }
